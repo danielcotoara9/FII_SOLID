@@ -11,5 +11,10 @@ SOLID examples and refactoring will be done in C#, Java and Python programming l
     - How to obtain a better design.
   
  Prerequisites:
- - Visual Studion 2019 || Visual Studio Code
- - .Net Core 3.1
+ -  Visual Studio Code
+ - .Net Core Tools
+ - .Net Core Tools
+ - Java Extension Pack
+ - Python Extension
+ - Python
+ - Python for VSCode
