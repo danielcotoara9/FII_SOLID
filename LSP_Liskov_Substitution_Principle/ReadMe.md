@@ -1,5 +1,6 @@
 
 LSP : The Liskov Subtitution Principle
+Programming language : Java
 
 - The Liskov Substitution Principle states that Subtypes must be subtitutable for their base types.
 
