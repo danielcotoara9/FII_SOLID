@@ -11,9 +11,9 @@ SOLID code examples and refactoring will be done in C#, Java and Python programm
   
  Prerequisites:
  -  Visual Studio Code
- - .Net Core Tools
+ - C# Extensions
  - .Net Core Tools
  - Java Extension Pack
- - Python Extension
+ - Python Extension Pack
  - Python
  - Python for VSCode
