@@ -1,6 +1,6 @@
 
 ISP : Interface Segregation Principle
-
+Programming language : Java
  - The Interface Segregation Principle states that Clients should not be forced to depend on methods they do not use.
  - Prefer small, cohesive interfaces to "fat" interfaces.
 
