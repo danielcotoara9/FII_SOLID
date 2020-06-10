@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRP_Single_Responsibility_Principle", "SRP_Single_Responsibility_Principle\SRP_Single_Responsibility_Principle.csproj", "{FCAC6461-81F0-4EEC-A141-1E30940EF981}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIP_Dependency_Inversion_Principle", "DIP_Dependency_Inversion_Principle\DIP_Dependency_Inversion_Principle.csproj", "{1C251ADA-5266-40C9-B68F-FCE3D59B31CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
