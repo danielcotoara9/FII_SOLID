@@ -23,6 +23,22 @@ namespace SRP_Single_Responsibility_Principle.Before
             }
         }
 
+        private void ReserveInventory(Cart cart)
+        {
+            foreach(var item in cart.Items)
+            {
+                try
+                {
+                    var inventoryService = new InventoryService();
+                    inventoryService.Reserve(item.Sku, item.Quantity);
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception($"There was a problem reserving inventory for item {item.Sku}");
+                }
+            }
+        }
+
         private void NotifyCustomer(Cart cart)
         {
             var customerEmail = cart.CustomerEmail;
@@ -42,22 +58,6 @@ namespace SRP_Single_Responsibility_Principle.Before
                     {
                         Logger.Log($"There was a problem when sending notification to email {customerEmail}", ex);
                     }
-                }
-            }
-        }
-
-        private void ReserveInventory(Cart cart)
-        {
-            foreach(var item in cart.Items)
-            {
-                try
-                {
-                    var inventoryService = new InventoryService();
-                    inventoryService.Reserve(item.Sku, item.Quantity);
-                }
-                catch(Exception ex)
-                {
-                    throw new Exception($"There was a problem reserving inventory for item {item.Sku}");
                 }
             }
         }
