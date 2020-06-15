@@ -4,7 +4,7 @@
     {
         internal void Reserve(string sku, object quantity)
         {
-            // code that will reserver the item
+            // code that will reserve the item
         }
     }
 }
