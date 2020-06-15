@@ -32,7 +32,7 @@ namespace SRP_Single_Responsibility_Principle.Before
                     var inventoryService = new InventoryService();
                     inventoryService.Reserve(item.Sku, item.Quantity);
                 }
-                catch(Exception ex)
+                catch(Exception)
                 {
                     throw new Exception($"There was a problem reserving inventory for item {item.Sku}");
                 }
@@ -77,7 +77,7 @@ namespace SRP_Single_Responsibility_Principle.Before
 
                     paymentGatway.Charge();
                 }
-                catch(Exception ex)
+                catch(Exception)
                 {
                     throw new Exception("There was a problem with your card");
                 }

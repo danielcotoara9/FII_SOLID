@@ -17,7 +17,7 @@ namespace SRP_Single_Responsibility_Principle.After.Implementations
                     var inventoryService = new InventoryService();
                     inventoryService.Reserve(item.Sku, item.Quantity);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw new Exception($"There was a problem reserving inventory for item {item.Sku}");
                 }

@@ -17,7 +17,7 @@ namespace DIP_Dependency_Inversion_Principle.After.Implementation
                     var inventoryService = new InventoryService();
                     inventoryService.Reserve(item.Sku, item.Quantity);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw new Exception($"There was a problem reserving inventory for item {item.Sku}");
                 }

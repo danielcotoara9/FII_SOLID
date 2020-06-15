@@ -25,7 +25,9 @@ namespace DIP_Dependency_Inversion_Principle.After.Implementation
                     paymentGatway.Charge();
                     AmountPassed = amount;
                 }
-                catch (Exception ex)
+                // Just an example -> Throw just an exception.
+                // Here can be created a custom exception like InvalidPaymentProcessorExcepion : Exception 
+                catch(Exception)
                 {
                     throw new Exception("There was a problem with your card");
                 }

@@ -24,7 +24,7 @@ namespace SRP_Single_Responsibility_Principle.After.Implementations
                 }
                 // Just an example -> Throw just an exception.
                 // Here can be created a custom exception like InvalidPaymentProcessorExcepion : Exception 
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw new Exception("There was a problem when processing your card");
                 }
